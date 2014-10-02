@@ -69,7 +69,7 @@ class ImageFromFile:
                     print fileName + " is not a tarfile."
                 tfile.close()
             else:
-                print "Input fileName is illegal"
+                print "Input fileName is invalid"
         except:
             print "Fail to extract " + fileName
 
@@ -82,7 +82,7 @@ class ImageFromFile:
                 ImageFromFile.extractTarFromFileName(f, extractTarPath, sizeThreshold)
             print "All files were extracted in " + extractTarPath 
         else:
-            print "Input fileList is illegal"
+            print "Input fileList is invalid"
 
     @staticmethod
     def gatherAllFile(src, dst, catList, catNum, csvFileName, isMultiOut):
